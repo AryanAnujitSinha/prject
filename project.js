@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const sensorDataDiv = document.getElementById("sensorData");
 
   setInterval(() => {
-    const temperature = (Math.random() * 10 + 20).toFixed(1);
-    const humidity = (Math.random() * 20 + 50).toFixed(1);
-    const nutrientLevel = (Math.random() * 5 + 2).toFixed(1);
+    const temperature = (Math.random() * 5 + 25).toFixed(1);
+    const humidity = (Math.random() * 11 + 40 ).toFixed(1);
+    const nutrientLevel = (Math.random() * 2 + 5.5).toFixed(1);
 
     sensorDataDiv.innerHTML = `
       <p>Temperature: ${temperature} °C</p>
@@ -14,3 +14,4 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   }, 2000);
 });
+
